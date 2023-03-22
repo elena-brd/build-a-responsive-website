@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #f4f4f4;
+    color: #282828;
+    line-height: 1.4;
+}
+
+main {
+    background: #fff;
+    overflow: hidden;
+    margin: auto;
+    max-width: 900px;
+    box-shadow: 20px 0 30px rgba(0, 0, 0, 0.2),
+        -20px 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Utilities */
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #282828;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    border: 1px solid #9c9c9c;
+    border-radius: 50px;
+    padding: 0.8rem 2.3rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: background 500ms ease-in;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+}
+
+/* Landing Page */
+#landing {
+    display: flex;
+}
+
+#landing-image {
+    background: url('../img/showcase.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#landing-text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 0.8rem;
+    padding: 0 3rem;
+}
+
+#landing-text h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+#landing-text h2 {
+    font-size: 1.1rem;
+    color: #888;
+    padding-bottom: 3rem;
+}
+
+/* Header */
+#main-header {
+    background: #333;
+    color: #fff;
+    padding: 1.2rem 0;
+    text-align: center;
+    border-left: dotted 1px #fff;
+}
+
+#main-header h2 {
+    font-size: 1.2rem;
+    display: inline-block;
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    padding: 0 1rem;
+}
+
+.image-container {
+    text-align: center;
+    line-height: 1.9;
+}
+
+.image-container h3 {
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+.image-container p {
+    padding-bottom: 2rem;
+}
+
+/* Footer */
+#main-footer {
+    text-align: center;
+    padding: 3rem 0;
+    line-height: 2em;
+}
+
+#main-footer h2 {
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+@media(max-width: 550px) {
+    #landing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container p {
+        padding: 0 1rem 1rem;
+    }
+
+    #landing-image {
+        height: 50vh;
+    }
+
+    #landing-text {
+        height: 50vh;
+    }
+}
